@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{EDCE91FE-6B96-4ED2-B436-3AE3B48257B5}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DiplomskiApp/Views/Warrents.xaml">
+    <Files>
+      <File FileName="DiplomskiApp/obj/Debug/netstandard2.0/MenuSlide.xaml.g.cs" Line="14" Column="5" />
+      <File FileName="DiplomskiApp/Views/Warrents.xaml" Line="55" Column="15" />
+      <File FileName="DiplomskiApp/Views/ImageUpload.xaml.cs" Line="29" Column="18" />
+      <File FileName="DiplomskiApp/Views/Warrents.xaml.cs" Line="54" Column="55" />
+      <File FileName="DiplomskiApp/Models/Warrent.cs" Line="10" Column="28" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.DiplomskiApp.Android AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Oreo" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/hrzz00e5/projects/DiplomskiApp/DiplomskiApp/Views/ImageUpload.xaml.cs" relfile="DiplomskiApp/Views/ImageUpload.xaml.cs" line="23" column="103" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.DiplomskiApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.93B02CCA-49F7-4393-9DB3-C92D88D8752E" />
+  <MultiItemStartupConfigurations />
+</Properties>

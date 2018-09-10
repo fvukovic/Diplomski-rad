@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                          xmlns:local="clr-namespace:DiplomskiApp" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" Icon="transportlogo.png" x:Class="DiplomskiApp.Views.Warrents" Title="Warrents">
+   <ContentPage.Content>
+      <Label Text="Menu" />
+   </ContentPage.Content> 
+             <Grid>
+                     <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                     </Grid.RowDefinitions>
+                     <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                     </Grid.ColumnDefinitions> 
+                     <Label TextColor="Black" Grid.Row="0" Margin="-30,0,0,0"  Grid.Column="2" Text="API" FontSize="13" />
+                     <Label TextColor="Black" Grid.Row="0" Margin="-30,0,0,0"  Grid.Column="1" Text="ISPORUKA" FontSize="13" /> 
+                              <Label TextColor="Black" Grid.Row="1" Margin="-30,-20,0,0"  Grid.Column="1" FontSize="13" Text="loadingdate}" />
+                     <Label TextColor="Black" Grid.Row="1" Margin="-30,-20,0,0"  Grid.Column="2" FontSize="13" Text=" RIJEKA" /> 
+                  </Grid>
+   <ListView x:Name="warrentList" Margin="10,20,10,10" HasUnevenRows="true" ItemTapped="Handle_ItemTapped">
+      <ListView.ItemTemplate BackgroundColor="#dbdbdb">
+         <DataTemplate>
+            <ViewCell>
+               <StackLayout Margin="10,10,10,10" Padding="3,3,3,3" BackgroundColor="#dbdbdb">
+                  <Grid>
+                     <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                     </Grid.RowDefinitions>
+                     <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                     </Grid.ColumnDefinitions>
+                            <Image HeightRequest="30" Margin="-50,0,0,0" WidthRequest="10" Source="{Binding image}"/>
+                     <Label TextColor="Black" Grid.Row="0" Margin="-30,0,0,0"  Grid.Column="2" Text="API" FontSize="13" />
+                     <Label  TextColor="Black" Grid.Row="0" Margin="-30,0,0,0"  Grid.Column="1" Text="ISPORUKA" FontSize="13" /> 
+                              <Label TextColor="Black" Grid.Row="1" Margin="-30,-20,0,0"  Grid.Column="1" FontSize="13" Text="{Binding loadingdate}" />
+                     <Label TextColor="Black" Grid.Row="1" Margin="-30,-20,0,0"  Grid.Column="2" FontSize="13" Text=" RIJEKA" /> 
+                  </Grid> 
+                  <Grid IsVisible="{Binding isVisible}">
+                     <Grid.RowDefinitions>
+                        <RowDefinition  Height="1" />
+                     </Grid.RowDefinitions>
+                     <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                     </Grid.ColumnDefinitions>
+                     <Label TextColor="Black" Grid.Row="0" Text="Eurodizel" FontSize="13" />
+                     <Label TextColor="Black" x:Name="kolicina" Grid.Row="1" Text="12000" FontSize="13" />
+                                <local:RoundedEntry HeightRequest="{Binding elementHeight}"   Grid.Row="2"/>  
+                     <Button TextColor="Black" Grid.Row="3" HeightRequest="{Binding elementHeight}" Text="Pošalji izvještaj" BackgroundColor="#11E884" FontSize="13" />
+                  </Grid>
+               </StackLayout>
+            </ViewCell>
+         </DataTemplate>
+      </ListView.ItemTemplate>
+   </ListView>
+</ContentPage>

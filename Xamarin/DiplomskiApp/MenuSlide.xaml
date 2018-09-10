@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+                  x:Class="DiplomskiApp.MenuSlide"   > 
+    <MasterDetailPage.Master > 
+        <ContentPage Title="Novi" >
+  <ContentPage.ToolbarItems>
+    <ToolbarItem   Order="Primary" Icon="transportlogo.png" Text="Item 1" Priority="0" />  
+                  <ToolbarItem Name="MenuItem1" Order="Primary" Icon="download.png"  Text="Item 1" Priority="0"  Clicked="openMenu" /> 
+</ContentPage.ToolbarItems>
+            <ContentPage.Content>
+                <StackLayout Margin="5,30,5,5"> 
+                    <Button Clicked="goToWarents" Text="Nalozi"></Button>
+                    <Button Clicked="goToUpload" Text="Upload Slike"></Button>
+                    <Button Clicked="goToUpload" Text="Odjavi se"></Button>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail  >
+         <ContentPage BackgroundColor="Red">
+            <ContentPage.Content>
+                <StackLayout Margin="5,30,5,5">
+                    <Label Text="Nalozi"/>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

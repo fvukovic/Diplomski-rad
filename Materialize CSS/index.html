@@ -1,0 +1,51 @@
+<html>
+    <head>
+       <style>html,
+body,
+.login-box {
+  height: 100%;
+}</style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script>
+       // SIDEBAR
+ $("#reset").on("click", function() {
+  $('label').removeClass('active');
+});
+     </script>
+            
+    </head>
+    <body>
+        <div class="valign-wrapper row login-box">
+  <div class="">
+    <form action="/warrent" method="get">
+      <div class="card-content">
+          <img src="transportlogo.png"/>
+          <br/>
+          <br/>
+          <br/> 
+          <br/>
+          <br/>
+        <div class="row">
+          <div class="input-field col s12">
+            <label for="email">Korisnicko ime</label>
+            <input type="email" class="validate" name="email" id="email" />
+          </div>
+          <div class="input-field col s12">
+            <label for="password">Password </label>
+            <input type="password" class="validate" name="password" id="password" />
+          </div>
+        </div>
+      </div>
+      <div class="card-action center-align" style="background-color: black"> 
+        <input type="submit" class="btn  waves-light" style="color:white;background-color: black" value="Prijavi se">
+      </div>
+    </form>
+  </div>
+</div>
+    </body>
+   
+</html>
